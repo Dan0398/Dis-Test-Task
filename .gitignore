@@ -9,4 +9,5 @@
 /.vscode/*
 *.csproj
 *.sln
+/[Aa]ssets/[Ss]cripts/**/*.cs.meta
 ps_driver_sdk.log

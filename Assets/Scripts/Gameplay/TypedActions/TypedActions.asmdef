@@ -1,0 +1,17 @@
+{
+    "name": "TypedActions",
+    "rootNamespace": "Gameplay.TypedActions",
+    "references": [
+        "GUID:578b2c97cc27c2248b849cbccd501292",
+        "GUID:fe685ec1767f73d42b749ea8045bfe43"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

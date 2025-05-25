@@ -312,7 +312,7 @@ MonoBehaviour:
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
-  m_depthSubmissionMode: 0
+  m_depthSubmissionMode: 1
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
 --- !u!114 &-5524529267463716304
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa5b568c4324bd4faad2da2e7ee7e84, type: 3}
   m_Name: PICOFeature Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: PICO Support
   version: 1.4.1
   featureIdInternal: com.unity.openxr.feature.pico
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 077bca9897b444788c83491c066a79b1, type: 3}
   m_Name: OpenXRExtensions Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: PICO OpenXR Features
   version: 1.0.0
   featureIdInternal: com.unity.openxr.pico.features
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d6ccd3d0ef0f1d458e69421dccbdae1, type: 3}
   m_Name: ValveIndexControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 1
+  m_enabled: 0
   nameUi: Valve Index Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.valveindex
@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8a6d03de5f8f34383932f29d464a21, type: 3}
   m_Name: PICONeo3ControllerProfile Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: PICO Neo3 Touch Controller Profile
   version: 1.0.0
   featureIdInternal: com.unity.openxr.feature.input.PICONeo3touch

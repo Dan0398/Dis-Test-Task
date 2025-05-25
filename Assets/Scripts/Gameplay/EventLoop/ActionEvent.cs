@@ -1,5 +1,6 @@
 namespace Gameplay.EventLoop
 {
+    [System.Serializable]
     public class ActionEvent
     {
         public readonly string ExpectedAction;

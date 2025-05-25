@@ -8,4 +8,5 @@
 /.ssh/*
 /.vscode/*
 *.csproj
-.*sln
+*.sln
+ps_driver_sdk.log

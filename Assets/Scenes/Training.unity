@@ -3029,8 +3029,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groups:
   - {fileID: 11400000, guid: ec4ba26acefc6534381115522106b6ea, type: 2}
-  - {fileID: 11400000, guid: ec4ba26acefc6534381115522106b6ea, type: 2}
-  - {fileID: 11400000, guid: ec4ba26acefc6534381115522106b6ea, type: 2}
+  - {fileID: 11400000, guid: f6d8029ee6e146f4698883a25621fa92, type: 2}
+  - {fileID: 11400000, guid: afefa30ab96a67141be333aa2a2f363b, type: 2}
   completeView: {fileID: 822329788}
   statusSounds: {fileID: 1800347994}
   eventLoop: {fileID: 822329780}

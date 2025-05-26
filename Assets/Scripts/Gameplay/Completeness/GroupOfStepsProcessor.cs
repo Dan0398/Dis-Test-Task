@@ -1,14 +1,17 @@
 namespace Gameplay.Completeness
 {
-    public class GroupOfStepsProcessor: EventLoop.IClient
+    public class GroupOfStepsProcessor
     {
         public string Info { get; private set; }
+
         public System.Action OnChanged;
 
         private readonly Steps.GroupOfSteps group;
         private readonly StepProcessor[] steps;
         private readonly System.Text.StringBuilder infoBuilder;
         private int actualStep;
+
+        public bool Completed => actualStep >= steps.Length;
 
         public GroupOfStepsProcessor(Steps.GroupOfSteps Group)
         {
@@ -56,7 +59,7 @@ namespace Gameplay.Completeness
 
         private void SeekActualStepCompleted()
         {
-            if (actualStep >= steps.Length) return;
+            if (Completed) return;
             if (steps[actualStep].Status == Status.NotCompleted) return;
             actualStep++;
             for (int i = actualStep + 1; i < steps.Length; i++)
@@ -82,6 +85,24 @@ namespace Gameplay.Completeness
             {
                 steps[i].ReceiveEvent(@event, i == actualStep);
             }
+        }
+
+        public string GetOneLineInfo()
+        {
+            if (!Completed)
+            {
+                throw new System.Exception("Trying to get info of GroupOfStepsProcessor. One line info available only when group of steps is completed.");
+            }
+            var bestStatus = Status.Success;
+            foreach (var step in steps)
+            {
+                if (step.Status == Status.Fail)
+                {
+                    bestStatus = Status.Fail;
+                    break;
+                }
+            }
+            return string.Concat(bestStatus.GetIcon(), group.Name);
         }
     }
 }

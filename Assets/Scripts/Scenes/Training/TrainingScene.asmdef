@@ -1,0 +1,19 @@
+{
+    "name": "TrainingScene",
+    "rootNamespace": "Scenes.Training ",
+    "references": [
+        "GUID:ac8b7f301ba4d3a489c266b6b125cc1d",
+        "GUID:578b2c97cc27c2248b849cbccd501292",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:153556614e45fc447938bd7c784c1e1c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

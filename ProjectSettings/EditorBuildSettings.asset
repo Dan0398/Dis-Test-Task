@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 126877afed62f4c43a5355a8f23eff8d
+  - enabled: 1
+    path: Assets/Scenes/Training.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d3be8d458e7a0204d86531e969e7e80d, type: 2}
     Unity.XR.PICO.LivePreview.Settings: {fileID: 11400000, guid: e65ca30f89a60ca47ae64c97108d756d, type: 2}

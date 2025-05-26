@@ -83,7 +83,7 @@ namespace Gameplay.Completeness
         {
             for (int i = actualStep; i < steps.Length; i++)
             {
-                steps[i].ReceiveEvent(@event, i == actualStep);
+                if (steps[i].IsReceivedEvent(@event, i == actualStep)) return;
             }
         }
 

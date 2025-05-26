@@ -1,4 +1,3 @@
-using System;
 using UnityEngine.XR.Interaction.Toolkit;
 
 namespace Gameplay.TypedActions

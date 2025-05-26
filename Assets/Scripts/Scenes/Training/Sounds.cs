@@ -4,13 +4,13 @@ namespace Scenes.Training
 {
     public class Sounds : MonoBehaviour
     {
-        [SerializeField] private AudioSource SuccessSource, ErrorSource;
+        [SerializeField] private AudioSource successSource, errorSource;
 
         public void PlaySoundByStatus(Gameplay.Completeness.Status status)
         {
-            SuccessSource.Stop();
-            ErrorSource.Stop();
-            var targetSource = status == Gameplay.Completeness.Status.Success ? SuccessSource : ErrorSource;
+            successSource.Stop();
+            errorSource.Stop();
+            var targetSource = status == Gameplay.Completeness.Status.Success ? successSource : errorSource;
             targetSource.Play();
         }
     }

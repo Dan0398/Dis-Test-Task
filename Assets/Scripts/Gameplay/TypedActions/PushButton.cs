@@ -1,11 +1,9 @@
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine;
 
 namespace Gameplay.TypedActions
 {
     public class PushButton : EventLoop.BaseAction
     {
-        [SerializeField] private bool ProvideActionsWhenSelecting;
         private XRSimpleInteractable interactable;
 
         protected override string ActionName => "Нажать на физическую кнопку";

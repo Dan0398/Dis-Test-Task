@@ -105,6 +105,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.OpenXR.Features.Ru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.OpenXR.Features.ConformanceAutomation", "Unity.XR.OpenXR.Features.ConformanceAutomation.csproj", "{16DF547F-74FA-860A-E6E3-FA67A8FB92A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outline", "Outline.csproj", "{3500E120-191C-AB7B-EFE4-57EB6FA668FE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.OpenXR.Features.OculusQuestSupport", "Unity.XR.OpenXR.Features.OculusQuestSupport.csproj", "{CE3C811D-FF32-C934-8B71-1249F8BD2A53}"
 EndProject
 Global
@@ -321,6 +323,10 @@ Global
 		{16DF547F-74FA-860A-E6E3-FA67A8FB92A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DF547F-74FA-860A-E6E3-FA67A8FB92A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DF547F-74FA-860A-E6E3-FA67A8FB92A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3500E120-191C-AB7B-EFE4-57EB6FA668FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3500E120-191C-AB7B-EFE4-57EB6FA668FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3500E120-191C-AB7B-EFE4-57EB6FA668FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3500E120-191C-AB7B-EFE4-57EB6FA668FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE3C811D-FF32-C934-8B71-1249F8BD2A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE3C811D-FF32-C934-8B71-1249F8BD2A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE3C811D-FF32-C934-8B71-1249F8BD2A53}.Release|Any CPU.ActiveCfg = Release|Any CPU

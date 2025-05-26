@@ -79,11 +79,12 @@ namespace Gameplay.Completeness
             Info = infoBuilder.ToString();
         }
 
-        public void ReceiveAction(EventLoop.ActionEvent @event)
+        public void ReceiveAction(EventLoop.ActionEvent @event, out Status finalStatus)
         {
+            finalStatus = Status.NotCompleted;
             for (int i = actualStep; i < steps.Length; i++)
             {
-                if (steps[i].IsReceivedEvent(@event, i == actualStep)) return;
+                if (steps[i].IsReceivedEvent(@event, i == actualStep, out finalStatus)) return;
             }
         }
 

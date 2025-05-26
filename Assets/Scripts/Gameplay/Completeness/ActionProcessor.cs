@@ -35,14 +35,16 @@ namespace Gameplay.Completeness
             status = Status.NotCompleted;
         }
 
-        public bool IsReceivedEvent(ActionEvent @event, bool allowFail)
+        public bool IsReceivedEvent(ActionEvent @event, bool allowFail, out Status resultStaus)
         {
+            resultStaus = Status.NotCompleted;
             if (status != Status.NotCompleted) return false;
             if (@event.ExpectedAction.Equals(stepAction.ExpectedAction, StringComparison.InvariantCultureIgnoreCase))
             {
                 var success = @event.Target.Equals(stepAction.Target, StringComparison.InvariantCultureIgnoreCase);
                 if (!success && !allowFail) return false;
                 status = success ? Status.Success : Status.Fail;
+                resultStaus = status;
                 onRefresh();
                 return true;
             }

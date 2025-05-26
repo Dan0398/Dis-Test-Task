@@ -69,9 +69,9 @@ namespace Gameplay.Completeness
             actualAction = 0;
         }
 
-        public bool IsReceivedEvent(ActionEvent @event, bool allowFail)
+        public bool IsReceivedEvent(ActionEvent @event, bool allowFail, out Status resultStatus)
         {
-            return actions[actualAction].IsReceivedEvent(@event, allowFail);
+            return actions[actualAction].IsReceivedEvent(@event, allowFail, out resultStatus);
         }
     }
 }

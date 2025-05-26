@@ -6,6 +6,7 @@ namespace Scenes.Training
     {
         [SerializeField] private Gameplay.Steps.GroupOfSteps[] groups;
         [SerializeField] private View completeView;
+        [SerializeField] private Sounds statusSounds;
         [SerializeField] private Gameplay.EventLoop.ActionsEventLoop eventLoop;
         private Gameplay.Completeness.GroupOfStepsProcessor[] groupProcessors;
         private TrainingState[] states;
@@ -46,7 +47,11 @@ namespace Scenes.Training
         {
             if (actualStateIndex < groupProcessors.Length)
             {
-                groupProcessors[actualStateIndex].ReceiveAction(@event);
+                groupProcessors[actualStateIndex].ReceiveAction(@event, out var status);
+                if (status != Gameplay.Completeness.Status.NotCompleted && statusSounds != null)
+                {
+                    statusSounds.PlaySoundByStatus(status);
+                }
             }
         }
 
